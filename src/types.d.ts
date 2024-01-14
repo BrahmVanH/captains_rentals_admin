@@ -44,3 +44,31 @@ export interface IDateEntry {
   propertyName: string;
   dateValue: string;
 }
+
+export const typeDefs = gql`
+	type imageObject {
+		original: String
+		thumbnail: String
+		originalAlt: String
+		thumbnailAlt: String
+	}
+	type homePgImgPack {
+		headerImgUrl: String
+		hideawayImgUrl: String
+		cottageImgUrl: String
+	}
+	type hideawayImgPack {
+		headerUrl: String
+		galleryArray: [imageObject]
+	}
+	type cottageImgPack {
+		headerUrl: String
+		galleryArray: [imageObject]
+	}
+	type Query {
+		getHomePgImgs: homePgImgPack
+		getHideawayImgs: hideawayImgPack
+		getCottageImgs: cottageImgPack
+		getAboutPgImg: String
+	}
+`;

@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const theme = {
+	primary: '#5f8fa5',
+	bg: 'white',
+};
+
 export const AlertRect = styled.div`
 	border-radius: 6px;
 	border: 1px solid red;
