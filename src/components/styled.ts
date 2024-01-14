@@ -1,8 +1,12 @@
 import styled from 'styled-components';
+import { ITheme } from '../types';
 
-export const theme = {
-	primary: '#5f8fa5',
-	bg: 'white',
+export const theme: ITheme = {
+	colors: {
+		primary: '#5f8fa5',
+		secondary: 'rgb(200, 188, 167, 0.6)',
+		bg: '#ffffff',
+	},
 };
 
 export const AlertRect = styled.div`

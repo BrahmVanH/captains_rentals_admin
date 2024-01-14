@@ -45,6 +45,15 @@ export interface IDateEntry {
   dateValue: string;
 }
 
+export interface ITheme {
+	colors: {
+		primary: string;
+		secondary: string;
+		bg: string;
+
+	}
+}
+
 export const typeDefs = gql`
 	type imageObject {
 		original: String
